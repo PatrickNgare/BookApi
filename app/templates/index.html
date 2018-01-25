@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Welcome to the best book reveiw website</title>
+    {% endif %}
+
+</head>
+<body>
+    <h3> By volume ID </h3>
+     <ul>
+        {% for book_items in books %}
+            <li>{{ book_items.title}}</li>
+        {% endfor %}
+    </ul>
+    
+</body>
+
+
+</html>
