@@ -11,9 +11,10 @@
 </head>
 <body>
     <h3> By volume ID </h3>
+    {{book}}
      <ul>
-        {% for book_items in books %}
-            <li>{{ book_items.title}}</li>
+        {% for books in book %}
+            <li>{{ books.title }}</li>
         {% endfor %}
     </ul>
     

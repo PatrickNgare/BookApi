@@ -13,9 +13,10 @@ def index():
     #getting books
     book_items=get_books('volumes')
      
+    
 
     title='Home - Welcome to the best Book review Website Online'
-    return render_template('index.html', title=title, book_items=book)
+    return render_template('index.html', title=title, book=book_items)
 
 
 
