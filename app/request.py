@@ -10,7 +10,7 @@ key=app.config['BOOK_API_KEY']
 base_url=app.config['BOOK_API_BASE_URL']
 
 
-def get_books(volumes):
+def get_books(gifted):
     '''
     Funstion that gets the json to our url request
     '''

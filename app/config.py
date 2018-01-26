@@ -2,7 +2,7 @@ class Config:
     '''
     General configuration parent class
     '''
-    BOOK_API_BASE_URL='https://www.googleapis.com/books/v1/volumes?q={}' + 'key='
+    BOOK_API_BASE_URL='https://www.googleapis.com/books/v1/volumes?q={}' + 'hands'
 
 
 

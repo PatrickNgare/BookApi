@@ -11,7 +11,7 @@ def index():
     views root page function that returns the index nd its data
     '''
     #getting books
-    book_items=get_books('volumes')
+    book_items=get_books('gifted')
      
     
 

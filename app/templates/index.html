@@ -1,24 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    {% if title %}
-    <title>{{ title }}</title>
-    {% else %}
-    <title>Welcome to the best book reveiw website</title>
-    {% endif %}
-
-</head>
-<body>
-    <h3> By volume ID </h3>
-    {{book}}
+{% extends 'base.html' %}
+{% import 'macros.html' as macro%}
+{% block content%}
+    
      <ul>
         {% for books in book %}
-            <li>{{ books.title }}</li>
+        <img src='{{ books.image }}'class='img-responsive img-thumbnail'>
+            <li>Book Tiitle:{{ books.title }}</li>
+            <li>Description:{{ books.description }}</li>
+            <li>Authors:{{ books.authors }}</li>
+            <li>Page Count::{{ books.pageCount }}</li>
+            <li>Preview link::{{ books.preveiwLink }}</li>
+            <li>Publish Date::{{ books.publishedDate }}</li>
         {% endfor %}
     </ul>
     
-</body>
-
-
-</html>
+{% endblock %}
